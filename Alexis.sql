@@ -1,7 +1,7 @@
 create table Vendedor (Numero_Vendedor integer primary key,Nombre_Vendedor varchar(50));
 create table Almacen (Numero_Almacen integer primary key,Ubicacion_Almacen varchar(50));
 create table Cliente (Numero_Cliente integer primary key,Nombre_Cliente varchar(50));
-      /*constraint pk_NUM_ALM primary key (Numero_Almacen)  ESTA ES OTRA FORMA DE AÑADIR PRIMARY KEY Y ESTA FORMA ES LA QUE SE TIENE QUE UTILIZAR */
+      /*constraint pk_NUM_ALM primary key (Numero_Almacen)  ESTA ES OTRA FORMA DE AÃ‘ADIR PRIMARY KEY Y ESTA FORMA ES LA QUE SE TIENE QUE UTILIZAR */
       
       create or replace procedure guardar_almacen(my_Numero_Almacen IN integer, my_Ubicacion_Almacen IN varchar2)
       as
@@ -14,4 +14,5 @@ create table Cliente (Numero_Cliente integer primary key,Nombre_Cliente varchar(
       guardar_almacen(321,'Ecatepec')
       end;
       /
-      select * from almacen;
+      select * from almacen; 
+       /*Probar
